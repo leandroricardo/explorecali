@@ -5,6 +5,9 @@ import com.example.ec.repo.TourPackageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * Created by Leandro Santos
+ */
 @Service
 public class TourPackageService {
 

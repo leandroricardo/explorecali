@@ -7,7 +7,7 @@ import java.util.Objects;
 /**
  * The Tour contains all attributes of an Explore California Tour.
  * <p>
- * Created by Mary Ellen Bowman
+ * Created by Leandro Santos
  */
 @Entity
 public class Tour implements Serializable {
@@ -35,7 +35,6 @@ public class Tour implements Serializable {
 
     @Column
     private String keywords;
-
 
     @ManyToOne
     private TourPackage tourPackage;

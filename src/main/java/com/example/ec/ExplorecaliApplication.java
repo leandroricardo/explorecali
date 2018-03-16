@@ -18,6 +18,9 @@ import java.util.List;
 
 import static com.example.ec.ExplorecaliApplication.TourFromFile.importTours;
 
+/**
+ * Created by Leandro Santos
+ */
 @SpringBootApplication
 public class ExplorecaliApplication implements CommandLineRunner {
 

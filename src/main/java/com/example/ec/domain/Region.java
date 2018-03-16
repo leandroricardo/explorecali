@@ -3,7 +3,7 @@ package com.example.ec.domain;
 /**
  * Enumeration of the region of California.
  * <p>
- * Created by Mary Ellen Bowman
+ * Created by Leandro Santos
  */
 public enum Region {
     Central_Coast("Central Coast"),

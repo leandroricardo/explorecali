@@ -8,6 +8,9 @@ import org.springframework.data.rest.core.annotation.RestResource;
 
 import java.util.Optional;
 
+/**
+ * Created by Leandro Santos
+ */
 @RepositoryRestResource(collectionResourceRel = "package", path = "package")
 public interface TourPackageRepository extends CrudRepository<TourPackage, String> {
 
