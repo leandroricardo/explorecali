@@ -7,7 +7,7 @@ import javax.validation.constraints.Size;
 
 /**
  * Data Transfer Object for Rating a Tour.
- *
+ * <p>
  * Created by Leandro Santos
  */
 public class RatingDto {
@@ -16,6 +16,7 @@ public class RatingDto {
     @Max(5)
     private Integer score;
 
+    @NotNull
     @Size(max = 255)
     private String comment;
 
@@ -35,26 +36,27 @@ public class RatingDto {
         this.customerId = customerId;
     }
 
-    protected RatingDto() {}
+    protected RatingDto() {
+    }
 
     public Integer getScore() {
         return score;
-    }
-
-    public String getComment() {
-        return comment;
-    }
-
-    public Integer getCustomerId() {
-        return customerId;
     }
 
     public void setScore(Integer score) {
         this.score = score;
     }
 
+    public String getComment() {
+        return comment;
+    }
+
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    public Integer getCustomerId() {
+        return customerId;
     }
 
     public void setCustomerId(Integer customerId) {

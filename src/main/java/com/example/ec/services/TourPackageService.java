@@ -25,11 +25,11 @@ public class TourPackageService {
         return null;
     }
 
-    public Iterable<TourPackage> lookup(){
+    public Iterable<TourPackage> lookup() {
         return tourPackageRepository.findAll();
     }
 
-    public long total(){
+    public long total() {
         return tourPackageRepository.count();
     }
 }

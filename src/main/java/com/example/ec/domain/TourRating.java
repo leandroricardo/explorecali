@@ -24,9 +24,9 @@ public class TourRating {
     /**
      * Create a fully initialized TourRating.
      *
-     * @param pk         primiary key of a tour and customer id.
-     * @param score      Integer score (1-5)
-     * @param comment    Optional comment from the customer
+     * @param pk      primiary key of a tour and customer id.
+     * @param score   Integer score (1-5)
+     * @param comment Optional comment from the customer
      */
     public TourRating(TourRatingPk pk, Integer score, String comment) {
         this.pk = pk;
@@ -65,20 +65,20 @@ public class TourRating {
         return pk;
     }
 
-    public Integer getScore() {
-        return score;
-    }
-
-    public String getComment() {
-        return comment;
-    }
-
     public void setPk(TourRatingPk pk) {
         this.pk = pk;
     }
 
+    public Integer getScore() {
+        return score;
+    }
+
     public void setScore(Integer score) {
         this.score = score;
+    }
+
+    public String getComment() {
+        return comment;
     }
 
     public void setComment(String comment) {

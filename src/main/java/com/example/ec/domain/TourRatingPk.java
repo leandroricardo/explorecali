@@ -14,7 +14,7 @@ public class TourRatingPk implements Serializable {
     @ManyToOne
     private Tour tour;
 
-    @Column(insertable = false, updatable = false,nullable = false)
+    @Column(insertable = false, updatable = false, nullable = false)
     private Integer customerId;
 
     public TourRatingPk() {
@@ -23,8 +23,8 @@ public class TourRatingPk implements Serializable {
     /**
      * Fully initialize a Tour Rating Pk
      *
-     * @param tour          the tour.
-     * @param customerId    the customer identifier.
+     * @param tour       the tour.
+     * @param customerId the customer identifier.
      */
     public TourRatingPk(Tour tour, Integer customerId) {
         this.tour = tour;

@@ -61,14 +61,15 @@ public class ExplorecaliApplication implements CommandLineRunner {
         System.out.println("Number of tours = " + tourService.total());
     }
 
-    static class TourFromFile{
+    static class TourFromFile {
 
         String packageType, title, blurb, description, bullets, difficulty, length, price, region, keywords;
 
         static List<TourFromFile> importTours() throws IOException {
             return new ObjectMapper().setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY)
                     .readValue(TourFromFile.class.getResourceAsStream("/ExploreCalifornia.json"),
-                            new TypeReference<List<TourFromFile>>(){});
+                            new TypeReference<List<TourFromFile>>() {
+                            });
         }
 
     }

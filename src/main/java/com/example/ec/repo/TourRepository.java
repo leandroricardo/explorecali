@@ -15,13 +15,13 @@ public interface TourRepository extends PagingAndSortingRepository<Tour, Integer
     /**
      * Lookup a Page of Tours associated with a TourPackage
      *
-     * @param code the tour Package code.
+     * @param code     the tour Package code.
      * @param pageable details for finding the correct page.
      * @return A page of tours if found, empty otherwise.
      */
     Page<Tour> findByTourPackageCode(@Param("code") String code, Pageable pageable);
 
-    Tour findOne(int tourId);
+    Tour findById(int tourId);
 
     @Override
     @RestResource(exported = false)
